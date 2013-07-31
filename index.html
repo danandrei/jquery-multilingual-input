@@ -80,6 +80,45 @@
                         <h1>How to use</h1>
                         <p class="lead"></p>
                     </div>
+                    
+                    <p>This only works on text inputs so make sure to add <code>type="text"</code> to the inputs.</p>
+                    <p> To make this work simply select the input/multiple inputs you want to change and call the <code>.i18n()</code> function.</p>
+                    </br>
+                    <pre>&lt;input type="text" id="myInput"&gt;</pre>
+                    <pre>
+$('#myInput').i18n({
+    locales: ['en','it','ro',
+    attribute: 'data-key'
+});
+                    </pre>
+                    </br>
+
+                    <ul>
+                        <li>
+                            <p> If <code>locales</code> option is found, then the plugin will generate as many buttons and inputs as provided locales. Button text will be the uppercase locale.</p>
+                        </li>
+                        <li>
+                            <p>If no <code>locales</code> option is found, then a <code>data-i18n</code> will be searched for in the processed input and this should have a comma separated locale value: <code>data-i18n="de,en,fr"</code>.</p>
+                        </li>
+                        <li>
+                            <p>If no <code>locales</code> option and no <code>data-i18n</code> atribute is found, then nothing will happen to the input.</p>
+                        </li>
+                    </ul>
+                    <p><strong><em>Note</em></strong>: even if the <code>locales</code> option is given, the plugin will still search for the <code>data-i18n</code> atribute, and if such attribute is found it will overwrite the <code>locales</code> option.</p>
+                    </br>
+               
+                    <ul>
+                        <li>
+                            <p>if the  <code>atribute</code> option is found, then the plugin will append to the generated inputs the coressponding locale using dot notation, ex: <code>data-key="some_value.de"</code>.</p>
+                        </li>
+                        <li>
+                            <p>if the option is found and it has no value, then the atribute of the inputs will only receive the coressponding locale, ex: <code>data-key="de"</code>.</p>
+                        </li>
+                        <li>
+                            <p>if the <code>atribute</code> option is not found, then the default <code>data-field</code> option will be added.</p>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
 
