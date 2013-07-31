@@ -74,6 +74,5 @@ body {
 }
 
 /* pages */
-
-.pages .active { display: block; }
-.pages .hide { display: none; }
+.pages .active { display: block !important; }
+.pages *[data-page] { display: none; }
