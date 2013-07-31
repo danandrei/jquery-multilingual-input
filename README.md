@@ -6,19 +6,19 @@ This is a simple jQuery plugin that turns an input into a multiligual one, the i
 ## Example
 
 An exemple of how this works:
-	
-Initial state:
+
+ - Initial state:
 
 	| DE | _____ | FR | IT |
-    
-Click on `FR`
+
+ - Click on `FR`
 
 	| DE | FR | _____ | IT |
-    
-Click on `IT`
+
+ - Click on `IT`
 
 	| DE | FR | IT | _____ |
-    
+
 where:
 
 * `DE`, `FR` and `IT` are appended/prepended buttons.
@@ -27,7 +27,7 @@ where:
 
 ## How to install
 
-Simply add 
+Simply add
 
 ```HTML
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
@@ -73,4 +73,4 @@ The function takes two options `locales` and `attribute`:
 
 * if the `atribute` option is not found, then the default `data-field` option will be added.
 
-    
+
