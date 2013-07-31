@@ -57,6 +57,24 @@
                         <h1>Demo</h1>
                         <p class="lead"></p>
                     </div>
+                        <p><strong>HTML:</strong></p>
+                        <pre>&lt;input type="text" id="myInput"&gt;</pre>
+                        <p><strong>jQuery:</strong></p>
+                        <pre>
+$('#myInput').i18n({
+    locales: ['en', 'it', 'ro'],
+    attribute: 'data-key'
+});
+                        </pre>
+
+                        <p><strong>Result:</strong></p>
+                        <input type="text" id="myInput">
+                        <script>
+                            $('#myInput').i18n({
+                                locales: ['en', 'it', 'ro'],
+                                attribute: 'data-key'
+                            });
+                        </script>
                 </div>
 
                 <!-- INSTALLTION - How to install -->
