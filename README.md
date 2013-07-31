@@ -25,6 +25,8 @@ where:
 * only ONE of the inputs is visible: the one after the clicked button language
 * the initial state is with the first language input visible
 
+See now the <a href="http://danandrei.github.io/jquery-multilingual-input/#demo" target="_blank"><strong>LIVE EXAMPLE</strong></a>!
+
 ## How to install
 
 Simply add
@@ -67,10 +69,12 @@ The function takes two options `locales` and `attribute`:
 * If no `locales` option and no `data-i18n` atribute is found, then nothing will happen to the input.
 
 
-*	if the  `atribute` option is found, then the plugin will append to the generated inputs the coressponding locale using dot notation, ex: `data-key="some_value.de"`.
+* if the  `atribute` option is found, then the plugin will append to the generated inputs the coressponding locale using dot notation, ex: `data-key="some_value.de"`.
 
-*	if the option is found and it has no value, then the atribute of the inputs will only receive the coressponding locale, ex: `data-key="de"`.
+* if the option is found and it has no value, then the atribute of the inputs will only receive the coressponding locale, e.g.: `data-key="de"`.
 
 * if the `atribute` option is not found, then the default `data-field` option will be added.
 
+## Plugin Page
 
+Also visit the <a href="http://danandrei.github.io/jquery-multilingual-input/" target="_blank">plugin page</a>.
