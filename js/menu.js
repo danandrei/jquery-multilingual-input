@@ -11,6 +11,10 @@ $(document).ready(function () {
 
 function showPage (hash) {
 
+    if (!hash) {
+        hash = "#home";
+    }
+
     var $menuItem = $("[href='" + hash + "']");
     var page = hash.substring(1);
 
