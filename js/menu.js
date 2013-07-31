@@ -19,7 +19,16 @@ function showPage (hash) {
     $menuItem.parent().addClass("active");
 
     var $pages = $(".pages");
-    // TODO Fadein, fadeout
-    $pages.find("[data-page]").removeClass("active");
-    $pages.find("[data-page='" + page + "']").addClass("active");
+
+    var $newPage = $pages.find("[data-page='" + page + "']");
+    var $activePage = $pages.find("[data-page].active");
+
+    if (!$activePage.length) {
+        $newPage.addClass("active").hide().fadeIn();
+    }
+
+    $activePage.fadeOut(function () {
+        $activePage.removeClass("active");
+        $newPage.addClass("active").hide().fadeIn();
+    });
 }
