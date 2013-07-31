@@ -1,7 +1,7 @@
 jQuery Multilingual Input
 =========================
 
-This is a simple Jquery plugin that turns an input into a multiligual one, the input is styled using **Bootstrap 2.3.1**.
+This is a simple jQuery plugin that turns an input into a multiligual one, the input is styled using **Bootstrap 2.3.1**.
 
 ## Example
 
