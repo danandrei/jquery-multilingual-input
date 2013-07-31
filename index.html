@@ -10,75 +10,18 @@
 
         <!-- Bootstrap 2.3.1 -->
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css">
+
+        <!-- other styles -->
+        <link rel="stylesheet" href="css/style.css">
+
         <!-- jQuery -->
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
         <!-- i18n plugin -->
-        <script type="text/javascript" src="i18n.js"></script>
+        <script type="text/javascript" src="js/i18n.js"></script>
 
-        <!-- other styles -->
-        <style type="text/css">
-          body {
-            padding-top: 20px;
-            padding-bottom: 60px;
-          }
-
-          /* Custom container */
-          .container {
-            margin: 0 auto;
-            max-width: 1000px;
-          }
-          .container > hr {
-            margin: 60px 0;
-          }
-
-          /* jumbotron */
-          .jumbotron {
-            margin: 80px 0;
-            text-align: center;
-          }
-          .jumbotron h1 {
-            font-size: 70px;
-            line-height: 1;
-          }
-          .jumbotron .lead {
-            font-size: 24px;
-            line-height: 1.25;
-          }
-          .jumbotron .btn {
-            font-size: 21px;
-            padding: 14px 24px;
-          }
-
-          /* Customize the navbar links to be fill the entire space of the .navbar */
-          .navbar .navbar-inner {
-            padding: 0;
-          }
-          .navbar .nav {
-            margin: 0;
-            display: table;
-            width: 100%;
-          }
-          .navbar .nav li {
-            display: table-cell;
-            width: 1%;
-            float: none;
-          }
-          .navbar .nav li a {
-            font-weight: bold;
-            text-align: center;
-            border-left: 1px solid rgba(255,255,255,.75);
-            border-right: 1px solid rgba(0,0,0,.1);
-          }
-          .navbar .nav li:first-child a {
-            border-left: 0;
-            border-radius: 3px 0 0 3px;
-          }
-          .navbar .nav li:last-child a {
-            border-right: 0;
-            border-radius: 0 3px 3px 0;
-          }
-        </style>
+        <!-- menu changes -->
+        <script type="text/javascript" src="js/menu.js"></script>
     </head>
     <body>
         <div class="container">
@@ -98,36 +41,45 @@
                 </div><!-- /.navbar -->
             </div>
 
-            <!-- HOME -->
-            <div data-page="home">
-                <div class="jumbotron">
-                    <h1>jQuery Multilangual Input</h1>
-                    <p class="lead">This is a simple jQuery plugin that turns an input into a multiligual one, the input is styled using Bootstrap 2.3.1.</p>
-                    <a class="btn btn-large btn-success" href="#demo">See the DEMO now!</a>
+            <div class="pages">
+                <!-- HOME -->
+                <div data-page="home">
+                    <div class="jumbotron">
+                        <h1>jQuery Multilangual Input</h1>
+                        <p class="lead">This is a simple jQuery plugin that turns an input into a multiligual one, the input is styled using Bootstrap 2.3.1.</p>
+                        <a class="btn btn-large btn-success" href="#demo">See the DEMO now!</a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- DEMO -->
-            <div data-page="demo">
-                <div class="jumbotron">
-                    <h1>Demo</h1>
-                    <p class="lead"></p>
+                <!-- DEMO -->
+                <div data-page="demo">
+                    <div class="jumbotron">
+                        <h1>Demo</h1>
+                        <p class="lead"></p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- INSTALLTION - How to install -->
-            <div data-page="installation">
-                <div class="jumbotron">
-                    <h1>How to install</h1>
-                    <p class="lead"></p>
+                <!-- INSTALLTION - How to install -->
+                <div data-page="installation">
+                    <div class="jumbotron">
+                        <h1>How to install</h1>
+                        <p class="lead"></p>
+                    </div>
+
+                    <p>Simply add</p>
+                <pre>
+&lt;link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css"&gt;
+&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="i18n.js"&gt;&lt;/script&gt;
+                </pre>
                 </div>
-            </div>
 
-            <!-- USAGE - How to use -->
-            <div data-page="usage">
-                <div class="jumbotron">
-                    <h1>How to use</h1>
-                    <p class="lead"></p>
+                <!-- USAGE - How to use -->
+                <div data-page="usage">
+                    <div class="jumbotron">
+                        <h1>How to use</h1>
+                        <p class="lead"></p>
+                    </div>
                 </div>
             </div>
 
