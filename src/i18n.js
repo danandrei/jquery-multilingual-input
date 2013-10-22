@@ -23,7 +23,7 @@
             $(obj).before('<button class="btn" type="button">' + locales[0].toUpperCase() + '</button>');
             
             for (i = locales.length - 1; i > 0; i--) {
-                $(obj).after('<input  style="display: none;" class="span2" type="text">');
+                $(obj).after($(obj).clone().css('display', 'none'));
                 $(obj).after('<button class="btn" type="button">' + locales[i].toUpperCase() + '</button>');
             }
             
@@ -38,7 +38,7 @@
             });
             
             var $elems = $parent.children('.btn');
-            var width = $(obj).width();
+            var width = $(obj).css('width');
             $elems.on('click', function(e) {
                 var i = $elems.index(this);
                 i+= 1;
@@ -46,7 +46,7 @@
                 if(display == 'none'){
                     $parent.children('input').animate({"width": "0"}, 200).promise().done(function () {
                         $parent.children('input').hide();
-                        $parent.children('input:nth-of-type(' + i + ')').show().animate({"width": width}, 200);
+                        $parent.children('input:nth-of-type(' + i + ')').show().animate({"width": width}, 200).focus();
                     });
                 }
                         
